@@ -124,6 +124,7 @@
 // 4.3 Escribe una función flecha llamada `calcularArea` que reciba el radio de un círculo y devuelva el área del círculo. Usa la fórmula A = π * r².
 const calcularArea = radio => {
     // Tu código aquí
+
     let area = radio * radio * 3.14
     return area
 };
@@ -132,21 +133,65 @@ const calcularArea = radio => {
 // 5.1 Escribe una función que calcule la suma de los primeros n números enteros de forma recursiva. Por ejemplo: `suma(3) -> 1 + 2 + 3 = 6`
 function suma(n) {
     // Tu código aquí
+
+    if (n === 0) {
+        return 0
+    } else {
+        return n + suma(n - 1)
+    }
+    
 }
 
 // 5.2 Escribe una función que calcule la sucesión de Fibonacci de forma recursiva. La sucesión de Fibonacci es una serie de números que empieza por 0 y 1 y cada número es la suma de los dos anteriores. Por ejemplo: `fibonacci(6) -> 8`
 function fibonacci(n) {
     // Tu código aquí
+
+    let con = 1
+    let fib1 = 0
+    let fib2 = 1
+    let suma
+    if (n === 0) {
+        return 0
+    } else if (n === 1) {
+        return 1
+    } else {
+        while (con < n) {
+            suma = fib1 + fib2
+            fib1 = fib2
+            fib2 = suma
+
+            con++
+        }
+    }
+    
+    return suma
 }
 
 // 5.3 Crea una función recursiva llamada `factorial` que calcule el factorial de un número. El factorial de n (n!) es el producto de todos los números enteros positivos menores o iguales a n.
 function factorial(n) {
     // Tu código aquí
+
+    if (n === 1) {
+        return n
+    } else {
+        return n * factorial(n - 1)
+    }
+
+
 }
 
 // 5.4 Escribe una función recursiva que calcule la potencia de un número dado el exponente. Por ejemplo: `potencia(2, 3) -> 8`
 function potencia(base, exponente) {
     // Tu código aquí
+
+    if (exponente === 0) {
+        return 1
+    } else if (exponente === 1) {
+        return base
+    } else {
+        return base * potencia(base, exponente - 1)
+    }
+
 }
 
 // Exportar las funciones para que puedan ser probadas
