@@ -146,10 +146,9 @@ function suma(n) {
 function fibonacci(n) {
     // Tu código aquí
 
-    let con = 1
-    let fib1 = 0
-    let fib2 = 1
+    let con = 1, fib1 = 0, fib2 = 1
     let suma
+    
     if (n === 0) {
         return 0
     } else if (n === 1) {
