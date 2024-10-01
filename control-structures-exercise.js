@@ -177,7 +177,11 @@ function evaluarNumeros(a, b, c) {
     } else if (todoNegativo) {
         console.log('Todos son negativos')
     } else if (a < 0 || b < 0 || c < 0){
-        console.log('Hay un negativo')
+        if (a > 0 || b > 0 || c > 0) {
+            console.log('Hay un negativo y un positivo')
+        } else {
+            console.log('Hay un negativo')
+        }
     } else if (a > 0 || b > 0 || c > 0) {
         console.log('Hay un positivo')
     } else {
