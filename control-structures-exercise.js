@@ -110,26 +110,26 @@ function obtenerDiaSemana(dia) {
 
     switch (dia) {
         case 1:
-            console.log('Es Domingo!')
-            break;
-        case 2:
             console.log('Es Lunes!')
             break;
-        case 3:
+        case 2:
             console.log('Es Martes!')
             break;
-        case 4:
+        case 3:
             console.log('Es Miercoles!')
             break;
-        case 5:
+        case 4:
             console.log('Es Jueves!')
             break;
-        case 6:
+        case 5:
             console.log('Es Viernes!')
+            break;
+        case 6:
+            console.log('Es Sabado!')
             break;
     
         default:
-            console.log('Es Sabado!')
+            console.log('Es Domingo!')
             break;
     }
 
