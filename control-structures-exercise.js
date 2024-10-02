@@ -127,9 +127,12 @@ function obtenerDiaSemana(dia) {
         case 6:
             console.log('Es Sabado!')
             break;
+        case 7:
+            console.log('Es Domingo!')
+            break;
     
         default:
-            console.log('Es Domingo!')
+            console.log('Invalido')
             break;
     }
 
