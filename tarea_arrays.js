@@ -32,7 +32,7 @@ function sumarPares(numeros) {
 function palabrasTerminanConA(palabras) {
     // Tu código aquí
 
-    const terminaConA = palabras.some(string => string[string.length - 1] === 'a')
+    const terminaConA = palabras.every(string => string[string.length - 1] === 'a')
     return terminaConA
 
 }
