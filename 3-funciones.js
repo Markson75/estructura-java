@@ -38,10 +38,10 @@
     // Tu código aquí
 
     function saludarPersonalizado(nombre, apellido) {
-        let nombreApellido = nombre + apellido
+        let nombreApellido = 'Hola, ' + nombre + ' ' + apellido
         return nombreApellido
     }
-    console.log('Hola, ' + saludarPersonalizado('Marco ', 'Martinez'))
+    console.log(saludarPersonalizado('Marco', 'Martinez'))
 
 // 2.3 Crea una función llamada `calcularPotencia` que reciba dos parámetros: base y exponente. La función debe devolver el resultado de elevar la base al exponente.
     // Tu código aquí
@@ -119,6 +119,7 @@
 
     let saludarFlecha = (nombre) => {
         let saludo = 'Hola ' + nombre
+        return saludo
     }
 
 // 4.3 Escribe una función flecha llamada `calcularArea` que reciba el radio de un círculo y devuelva el área del círculo. Usa la fórmula A = π * r².
