@@ -146,24 +146,14 @@ function suma(n) {
 function fibonacci(n) {
     // Tu código aquí
 
-    let con = 1, fib1 = 0, fib2 = 1
-    let suma
-    
     if (n === 0) {
         return 0
     } else if (n === 1) {
         return 1
     } else {
-        while (con < n) {
-            suma = fib1 + fib2
-            fib1 = fib2
-            fib2 = suma
-
-            con++
-        }
+        return fibonacci(n - 1) + fibonacci(n - 2)
     }
     
-    return suma
 }
 
 // 5.3 Crea una función recursiva llamada `factorial` que calcule el factorial de un número. El factorial de n (n!) es el producto de todos los números enteros positivos menores o iguales a n.
